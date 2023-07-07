@@ -40,8 +40,8 @@ fun main(args: Array<String>) {
     println(age3.toString() + age4) //2020
 
     val age5 = 20
-    val age6 = "20"
-    println(age5 + age6.toInt()) //40
+    val age6 = "21"
+    println(age5 + age6.toInt()) //41
 
     val input = "f"
     val gender = when(input.uppercase(Locale.getDefault())) {
