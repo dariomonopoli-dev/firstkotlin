@@ -43,7 +43,7 @@ fun main(args: Array<String>) {
     val age6 = "20"
     println(age5 + age6.toInt()) //40
 
-    val input = "M"
+    val input = "f"
     val gender = when(input.uppercase(Locale.getDefault())) {
         "M" -> "Male"
         "F" -> "Female"
