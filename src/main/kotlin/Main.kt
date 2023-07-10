@@ -55,62 +55,6 @@ fun main(args: Array<String>) {
 
     println(gender)
 
-    val myList = listOf("apple", "banana", "cherry")
-    println(myList[1])
-
-    val myMap = mapOf("key1" to "value1", "key2" to "value2", "key3" to "value3")
-    println(myMap["key1"])
-
-    var number = 10
-    if(number > 0){
-        println("$number is positive")
-    }else{
-        println("$number is negative")
-    }
-
-    when(number){
-        1 -> println("Number is 1")
-        2 -> println("Number is 2")
-        10 -> println("Number is 10")
-        else -> println("Number is not 1, 2 or 10")
-    }
-
-
-    println(addTwoNumbers(5, 7)) // will print 12
-    println(multiplyTwoNumbers(3, 5)) // will print 15
-
-    var nullString : String? = null
-    println(nullString?.length)
-
-
-    var length = nullString?.length ?: 0
-    println(length)
-
-    for (i in 1..10) {
-
-        val prefix = if (i == 1) {
-            "*"
-        } else if (i !in 4..7) {
-            "-"
-        } else {
-            print("-")
-            ">"
-        }
-
-        println("$prefix $i")
-    }
 
 
 }
-
-    fun addTwoNumbers(a: Int, b: Int): Int {
-        return a + b
-    }
-
-    fun multiplyTwoNumbers(a: Int, b: Int): Int = a * b
-
-
-
-
-
-
