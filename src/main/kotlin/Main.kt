@@ -55,6 +55,41 @@ fun main(args: Array<String>) {
 
     println(gender)
 
+    //For loop
+    for (i in 1..10) { // prints numbers from 1 to 10
+        println(i)
+    }
+
+    for (i in 1 until 10) { // prints numbers from 1 to 9
+        println(i)
+    }
+
+    for (i in 10 downTo 1) { // prints numbers from 10 to 1
+        println(i)
+    }
+
+    for (i in 1..10 step 2) { // prints numbers from 1 to 10, but in steps of 2 (1,3,5,7,8)
+        println(i)
+    }
+
+    for (i in 1.rangeTo(10).step(2)) { // same as above
+        println(i)
+    }
+
+    for (i in 'a'..'z') { // prints all letters from a to z
+        println(i)
+    }
+
+    val names = arrayOf("Dario", "Juan", "Pedro")
+
+
+    for (index in names.indices) {
+        println("Index: $index, Element: ${names[index]}")
+    }
+
+    println("2 > 1 is ${2 > 1}") // true
+    println("1 = 1 is ${1 == 1}") // true
+
 
 
 }
